@@ -18,7 +18,7 @@
             <td>{{prod.precio}}</td>
             <td><button class="btn btn-outline-primary" routerLink="/detail/{{prod.id}}"><i class="far fa-eye"></i> Ver</button></td>
             <td><button class="btn btn-outline-warning" routerLink="/update/{{prod.id}}"><i class="far fa-edit"></i> Modificar</button></td>
-            <td><button class="btn btn-outline-danger"><i class="far fa-trash-alt"></i> Eliminar</button></td>
+            <td><button class="btn btn-outline-danger" (click)="onDelete(prod.id)"><i class="far fa-trash-alt"></i> Eliminar</button></td>
           </tr>  
         </tbody>
       </table>
