@@ -7,11 +7,11 @@
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                 <div class="mb-3">
                   <input type="text" class="form-control" id="name" name="name" placeholder="Nombre producto"
-                  autocomplete="off" required [(ngModel)]="product.nombre">
+                  autocomplete="off" required [(ngModel)]="nombre">
                 </div>
                 <div class="mb-3">
                     <input type="number" class="form-control" id="price" name="price" placeholder="Precio producto"
-                    autocomplete="off" required [(ngModel)]="product.precio">
+                    autocomplete="off" required [(ngModel)]="precio">
                 </div>
                 <button class="btn btn-outline-success w-100 mb-3" [disabled]="f.invalid">
                     <i class="far fa-edit"></i> Guardar
